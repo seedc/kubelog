@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日记下载工具</title>
+</head>
+<body>
+{{range $v := .}}
+    <form name={{.}} action={{.}} method='post'>
+        <a href=../Download/{{.}}> {{.}}</a>
+    </form>
+{{end}}
+</body>
+</html>
